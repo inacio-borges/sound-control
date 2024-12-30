@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:indeterminate="false"
+        android:max="24"
+        android:progress="12"
+        android:progressTint="#103CDB"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="333dp"
+        android:text="Usuario Ativo: "
+        app:layout_constraintBottom_toTopOf="@+id/seekBar5"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerUsers"
+        app:layout_constraintStart_toStartOf="@+id/spinnerUsers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:indeterminate="false"
+        android:max="24"
+        android:progress="12"
+        android:progressTint="#103CDB"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar5"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="252dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="379dp"
+        android:indeterminate="false"
+        android:max="24"
+        android:progress="12"
+        android:progressTint="#103CDB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:indeterminate="false"
+        android:max="24"
+        android:progress="12"
+        android:progressTint="#103CDB"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:indeterminate="false"
+        android:max="24"
+        android:progress="12"
+        android:progressTint="#103CDB"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCreateUser"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
+
+    <Button
+        android:id="@+id/buttonCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="13dp"
+        android:text="Adicionar Usuario"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
